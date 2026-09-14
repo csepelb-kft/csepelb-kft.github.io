@@ -55,6 +55,23 @@
             object-fit: cover;
             display: block;
         }
+         .gallery-caption {
+            padding: 15px;
+            background-color: #1a1a1a;
+            border-top: 1px solid #2a2a2a;
+        }
+        .gallery-caption h3 {
+            margin: 0 0 5px 0;
+            font-size: 1.1rem;
+            color: #ffffff;
+        }
+        .gallery-caption p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #aaaaaa;
+            text-align: left;
+            line-height: 1.4;
+        }
 
         .contact-box { background: #1a1a1a; padding: 30px; border-radius: 6px; border: 1px solid #2a2a2a; margin-top: 30px; }
         footer { background-color: #0a0a0a; padding: 30px; text-align: center; font-size: 0.9rem; color: #666; border-top: 1px solid #222; margin-top: 80px; }
@@ -105,12 +122,43 @@
         </ul>
 
         <!-- 1. CSOPORT -->
-        <h2> Kész Kőmunkák</h2>
+        <h2>Kész Kőmunkák és Referenciák</h2>
         <div class="gallery-grid">
-            <div class="gallery-item"><img src="sarkanyos1.jpeg" alt="Sárkányos kőmunka" onclick="openLightbox(0)"></div>
-            <div class="gallery-item"><img src="kerubok1b.jpeg" alt="Kerub szobor részlet" onclick="openLightbox(1)"></div>
-            <div class="gallery-item"><img src="kerubok1a.jpeg" alt="Kerub szobor" onclick="openLightbox(2)"></div>
-            <div class="gallery-item"><img src="christ1b.jpeg" alt="Krisztus szobor" onclick="openLightbox(3)"></div>
+            <!-- 1. KÉP: SÁRKÁNYOS -->
+            <div class="gallery-item" onclick="openLightbox(0)">
+                <img src="sarkanyos1.jpeg" alt="Nemzeti Vértanúk Emlékműve">
+                <div class="gallery-caption">
+                    <h3>Nemzeti Vértanúk Emlékműve (2019)</h3>
+                    <p>220×130×230 cm | Bolgár Vratza mészkőtömb beszerzése és többtengelyes robotkaros megmunkálása Elek Imre 3D rekonstrukciója alapján.</p>
+                </div>
+            </div>
+
+            <!-- 2. KÉP: KERUB RÉSZLET -->
+            <div class="gallery-item" onclick="openLightbox(1)">
+                <img src="kerubok1b.jpeg" alt="Kerub szobor részlet">
+                <div class="gallery-caption">
+                    <h3>Kerub szobor részlet</h3>
+                    <p>A részletgazdag felületek művészi megmunkálása és finomhangolása.</p>
+                </div>
+            </div>
+
+            <!-- 3. KÉP: KERUB EGÉSZ -->
+            <div class="gallery-item" onclick="openLightbox(2)">
+                <img src="kerubok1a.jpeg" alt="Kerub szobor">
+                <div class="gallery-caption">
+                    <h3>Kerub szobor</h3>
+                    <p>Összetett geometriájú kőszobrászati alkotás precíziós kivitelezése.</p>
+                </div>
+            </div>
+
+            <!-- 4. KÉP: KRISZTUS -->
+            <div class="gallery-item" onclick="openLightbox(3)">
+                <img src="christ1b.jpeg" alt="Krisztus szobor">
+                <div class="gallery-caption">
+                    <h3>Krisztus ábrázolás</h3>
+                    <p>Szakrális kőszobrászati feladatok magas szintű megvalósítása.</p>
+                </div>
+            </div>
         </div>
 
         <!-- 2. CSOPORT -->
